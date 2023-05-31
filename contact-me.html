@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Contact Me </title>
+        
+        <link href="assets/css/contact-me.css" rel="stylesheet">
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul class="left-list">
+                    <img src="images/dumbways.png" alt="dumbways" >
+                    <li class="item-collapse"><a href="#">Home</a></li>
+                    <li class="item-collapse"><a href="project.html">My Projects</a></li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse"><a href="contact-me.html">Contact Me</a>
+            </div>
+            <div class="dropdown-nav" id="barsmenu">
+                <button onclick="openDropdown()">
+                  <a href="#"><img src="images/dropdown logo.png"></a>
+                </button>
+              </div>
+        </nav>
+
+        <div class="dropdown-nav-container" id="dropdown-nav-container">
+            <a href="index.html">Home</a>
+            <a href="project.html">My Projects</a>
+            <div class="dropdown-contact">
+                <a href="contact-me.html" class="dropdown-active">Contact</a>
+            </div>
+        </div>
+          
+            <center><h1>GET IN TOUCH</h1></center>
+    
+       <!-- form contact me -->
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input">
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" class="input">
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject" class="select">
+                    <option value="" hidden></option>
+                    <option>Let's Talk</option>
+                    <option>Let's Collaboration</option>
+                    <option>I am Hiring</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Your Message</label>
+                <textarea id="message" class="input"></textarea>
+            </div>
+
+            <div class="submitButton">
+                <b onclick="getData()">Submit</b>
+            </div>
+        </form>
+    </body>
+    <script src="assets/js/index.js"></script>
+</html>

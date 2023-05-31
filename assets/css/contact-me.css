@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: rgb(192, 191, 191);
+    margin: 0;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+}
+
+nav img {
+    margin-right: 50px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-left ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: black;
+}
+  
+nav ul li .active {
+    color: blue;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.dropdown-navbar {
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+}
+
+.dropdown-nav-container {
+    font-size: 18px;
+    list-style-type: none;
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown-nav-container a, .dropdown-contact {
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;  
+  }
+
+.dropdown-nav-container .dropdown-active {
+    text-decoration: none;
+    color: rgb(247, 247, 248);
+    background-color: #383be9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;  
+}
+
+.dropdown-nav img {
+    width: 40px; 
+    margin: auto;
+    border: none;
+    background-color: transparent;  
+    cursor: pointer;
+}
+
+#barsmenu {
+    display: none;
+}
+
+/* Contact me styling */
+form {
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    width: 500px; 
+    margin: 50px auto;
+    padding: 20px;
+}
+
+form div {
+    padding: 10px 35px 10px 20px;
+}
+
+form div label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, 
+select, 
+textarea {
+    width: 100%;
+    margin: 0 10px 0 0;
+    padding: 13px 10px;
+    box-shadow: 2px 4px 8px 1px#636262;
+    background-color: #DBE4C6;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-top: 5px;
+    resize: none; 
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.submitButton {
+    width: auto;
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .item-collapse {
+        display: none;
+      }   
+    
+    .dropdown-nav button {
+        display: block;
+    }
+    
+    #barsmenu {
+        display: block;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+    

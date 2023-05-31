@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: rgb(192, 191, 191);
+    margin: 0;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+}
+
+nav img {
+    margin-right: 50px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-left ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+nav ul li a {
+  color: black;
+}
+
+nav ul li .active {
+  color: blue;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.dropdown-navbar {
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer;
+}
+
+.dropdown-nav-container {
+  font-size: 18px;
+  list-style-type: none;
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown-nav-container a, .dropdown-contact {
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;  
+}
+
+.dropdown-nav-container .dropdown-active {
+  text-decoration: none;
+  color: rgb(247, 247, 248);
+  background-color: #383be9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;  
+}
+
+.dropdown-nav img {
+  width: 40px; 
+  margin: auto;
+  border: none;
+  background-color: transparent;  
+  cursor: pointer;
+}
+
+#barsmenu {
+  display: none;
+}
+
+/* Contact me styling */
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, 
+select, 
+textarea {
+    width: 100%;
+    box-shadow: 2px 4px 8px 1px#636262;
+    background-color: #DBE4C6;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.date {
+  display: flex;
+  background-color: rgb(192, 191, 191);
+  margin: 11px 0px 11px 0px;
+  border: 0px ; 
+  padding: 10px auto; 
+  width: 500 px;
+  color: #000000;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.date > div {  
+  background-color: rgb(192, 191, 191);
+  margin:0px;
+  padding: 3px;
+  font-size: 30px;
+}
+  
+.checkBox {
+    display: grid;
+    margin-top: 0px;
+    justify-content: start;
+    gap :1em 4em;
+    grid-template-columns: auto auto;
+    font-size: 4px; 
+  }
+  
+.nodeBox {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+.submitButton button{
+    width: auto;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 230px;
+    cursor: pointer;
+}
+
+.submitButton button:hover{
+  padding:9px 19px;
+  color:#000000;
+  border: 1px solid;
+}
+
+/* project page */
+
+.listProject {
+  justify-content: center;
+}
+
+.listProject {
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.itemProject {
+    display: flex;
+    margin: 15px;
+    max-width:min-content;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 1px#636262;
+    border: solid none;
+    border-radius: 10px;
+    box-shadow: #636262;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.author {
+  margin: 10px;
+  float: right;
+  font-size: 12px;
+  color: #000000;
+}
+
+.itemProject .header .imageP {
+    margin:auto;
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.itemProject .header .titleP {
+    font-size: 25px;
+    justify-items: center;
+    text-decoration: none;
+}
+
+.listProject .itemProject .projectContent {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.btnGroups {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btnGroups .btn {
+  width: 100px;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+
+  .form-container {
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+
+  .listProject {
+    justify-content: center;
+  }
+
+  .listProject {
+    width: 43%;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+
+  .form-container {
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+
+  .listProject {
+    justify-content: center;
+  }
+
+  .listProject {
+    width: 83%;
+  }
+  
+}
